@@ -1,0 +1,32 @@
+{
+  "name": "brownbook-back",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run build && node dist/bin/www",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "apollo-server-express": "^2.10.0",
+    "core-js": "^3.6.4",
+    "cors": "^2.8.5",
+    "express": "~4.16.1",
+    "graphql": "^14.6.0",
+    "mongodb": "^3.5.2",
+    "npm": "^6.13.7",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "axios": "^0.19.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "express-graphql": "^0.9.0",
+    "mongoose": "^5.8.11",
+    "rimraf": "^3.0.1"
+  }
+}
